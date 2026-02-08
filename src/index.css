@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/* ============================================================================
+   BEACON PROTOCOL - Design System
+   Minimal 3-color palette:
+   - Background: #0c0c0c (Neutral Dark)
+   - Text: #e5e5e5 (Neutral Light)  
+   - Accent: #3d3b8e (French Blue)
+   ============================================================================ */
+
+@theme {
+  --color-bg: #0c0c0c;
+  --color-bg-subtle: #141414;
+  --color-border: #252525;
+  --color-text: #e5e5e5;
+  --color-text-muted: #707070;
+  --color-accent: #3d3b8e;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-text);
+}
